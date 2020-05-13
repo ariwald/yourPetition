@@ -1,0 +1,15 @@
+<div class="header">
+    <h3>
+        Hi, <strong>{{name}}</strong>! We would like to know a bit more about you :-)
+    </h3>
+</div>
+
+<div class="form header">
+    <form method="POST">
+        <input type="text" name="age" placeholder="Insert your age (optional)">
+        <input type="text" name="city" placeholder="Insert your city (optional)">
+        <input type="text" name="url" placeholder="Inset your homepage (optional)">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button> Continue to petition </button>
+    </form>
+</div>

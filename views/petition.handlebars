@@ -1,0 +1,24 @@
+{{#if err}}
+<div class="error">
+    You must fill all input fields!
+</div>
+{{/if}}
+
+<h1 class="header">
+    {{name}} {{lastname}}, sign our petition and let's ink the world :-)
+</h1>
+
+<div class="form">
+    <form method=POST>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="button">
+            <input name="signature" type="hidden" id="hiddenField"></input>
+            <canvas id="canvas" width="500" height="50"></canvas>
+            <br>
+            <br>
+            <center>
+                <button>submit</button>
+            </center>
+        </div>
+    </form>
+</div>

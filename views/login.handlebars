@@ -1,0 +1,24 @@
+<h1 class="headerLogin">
+    Please, login  to sign the petition:
+</h1>
+
+<div class="form">
+    <form method="POST">
+        <input type="text" name="email" placeholder="E-mail address">
+        <input type="password" name="password" placeholder="Password">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <br>
+        <center>
+            <button class="submit-btn" name="log-in">Log in</button>
+        </center>
+    </form>
+</div>
+
+<h1 class="headerLogin">
+    {{#if err}}
+    <p id="error">
+        Ops... something went wrong! Please try again or
+        <a href="/register">register here</a>
+    </p>
+    {{/if}}
+</h1>

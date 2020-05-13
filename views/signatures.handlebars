@@ -1,0 +1,23 @@
+<div class="headerSignatures">
+    <center>
+        <h1>
+            Colorful supporters
+        </h1>
+    <center>
+    <br>
+    <h3>
+        {{#rows}}
+
+        {{#if url}}
+            <p>
+                <a target="_blank" href="{{url}}">{{name}} {{lastname}}</a>
+                {{age}} <a href="/signatures/{{city}}">{{city}}</a>
+            </p>
+            {{else}}
+            <p>{{name}} {{lastname}} {{age}} <a href="/signatures/{{city}}">{{city}}</a></p>
+        {{/if}}
+
+        {{/rows}}
+    </h3>
+</div>
+<br>

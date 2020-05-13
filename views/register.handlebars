@@ -1,0 +1,30 @@
+<h1 class="header">
+    Please, register here:
+</h1>
+
+{{#if err}}
+
+<p class="header">
+    Something went wrong... Please, register again :-)
+</p>
+
+{{/if}}
+
+<div class="form">
+    <form method=POST>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input name="name" placeholder="Inser your first name"></input>
+        <input name="lastname" placeholder="Insert your last name"></input>
+        <br>
+        <input name="email" placeholder="Insert your e-mail"></input>
+        <input name="password" type="password" placeholder="Insert your password"></input>
+        <br>
+        <center>
+            <button>Submit</button>
+        </center>
+    </form>
+</div>
+
+<h1 class="header">
+    If you are already registered, please
+</h1>

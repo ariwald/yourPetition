@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: white;
+}
+
+.pageTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    background: yellow;
+}
+
+.rainbow {
+    background-image: url("/rainbow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.buttons {
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: #2b1de8;
+    color: white;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: #2b1de8;
+    color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    opacity: 60%;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.headerThanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #2b1de8;
+}
+
+.headerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    font-size: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background: #2b1de8;
+    border: solid 1px;
+}
+
+.formEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: #2b1de8;
+    border: solid 1px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    background: #2b1de8;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+.regenbogen {
+    margin-top: 20px;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 95%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(
+        124deg,
+        #ff2400,
+        #e81d1d,
+        #e8b71d,
+        #e3e81d,
+        #1de840,
+        #1ddde8,
+        #2b1de8,
+        #dd00f3,
+        #dd00f3
+    );
+    background-size: 300% 300%;
+
+    -petition-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}

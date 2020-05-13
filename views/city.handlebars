@@ -1,0 +1,23 @@
+<div class="header">
+    Many thanks to the people from
+
+    <strong>{{city}}</strong>
+
+    who made the world more colorful!
+</div>
+
+<div class="header">
+    {{#each signatures}}
+
+    {{#if url}}
+
+    <p><a href="{{url}}">{{name}} {{lastname}}</a> {{age}}</p>
+
+    {{else}}
+
+    <p>{{name}} {{lastname}} {{age}}</p>
+
+    {{/if}}
+
+    {{/each}}
+</div>
