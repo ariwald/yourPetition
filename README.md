@@ -14,3 +14,9 @@ If something went wrong, an error message will alert the user.
 
 Sign the petition
 Provide a signature by drawing into the HTML canvas element. The logic was written in JavaScript jQuery.
+After successfully signing, the user is shown his signature as well as a list of everybody else who signed.
+The user can also edit the profile, delete or change the signature.
+
+Frontend
+Using Handlebars, information from the server is being displayed.
+
