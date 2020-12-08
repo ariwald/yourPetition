@@ -3,29 +3,36 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/ico.jpg">
+        <link rel="shortcut icon" href="/icon.png">
         <link rel="stylesheet" href="/style.css">
-        <title>Colorful is beautiful!</title>
+        <title>Stell Arivaldo ein!</title>
     </head>
 
     <body>
         <div class="pageTop">
-            Sign our petition to make the you rock!
+            Stell ihn ein!
+
         </div>
 
-        <div class="rainbow"></div>
+        <div class="pageMiddle">
 
+            Arivaldo arbeitet hart und ist ein Teamfit :-)
+            Registriere dich und unterstütze die Petition!
+
+       </div>
+
+        <div class="pageDown">
             {{{ body }}}
-
                 {{#if loginB}}
-                {{>login-b}}
+                Bereits registriert?
+                    {{>login-b}}
                 {{else}}
-                {{>logout-b}}
+                    {{>logout-b}}
                 {{/if}}
-
                 {{#if editB}}
-                {{>edit-b}}
+                    {{>edit-b}}
                 {{/if}}
+        </div>
 
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

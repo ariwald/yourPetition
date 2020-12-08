@@ -1,148 +1,136 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: white;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .pageTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    font-size: 40px;
-    background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  font-size: 45px;
+  color: white;
+  background: black;
 }
 
-.rainbow {
-    background-image: url("/rainbow.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
+.pageMiddle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  font-size: 35px;
 }
 
-.buttons {
-    text-align: center;
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-    border: 1px solid white;
-    background-color: #2b1de8;
-    color: white;
-}
-
-button {
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    border: 1px solid white;
-    background-color: #2b1de8;
-    color: white;
-}
-
-button:hover {
-    color: white;
-    background-color: black;
-    opacity: 60%;
-}
-
-input {
-    height: 40px;
-    width: 300px;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.headerThanks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: #2b1de8;
-}
-
-.headerLogin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100px;
-    font-size: 30px;
+.pageDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  font-size: 25px;
+  color: white;
+  background: black;
 }
 
 .form {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    background: #2b1de8;
-    border: solid 1px;
+  margin: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+button {
+  height: 3rem;
+  width: 6rem;
+  left: 0;
+  top: 0rem;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  opacity: 60%;
+}
+
+.link {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+input {
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.headerThanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #2b1de8;
+}
+
+.headerLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  font-size: 30px;
 }
 
 .formEdit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background: #2b1de8;
-    border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: #2b1de8;
+  border: solid 1px;
 }
 
 .error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 30px;
-    margin-bottom: 50px;
-    background: #2b1de8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  background: #2b1de8;
 }
 
 #canvas {
-    border: 1px solid black;
-}
-
-.regenbogen {
-    margin-top: 20px;
-    height: 50%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 95%;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(
-        124deg,
-        #ff2400,
-        #e81d1d,
-        #e8b71d,
-        #e3e81d,
-        #1de840,
-        #1ddde8,
-        #2b1de8,
-        #dd00f3,
-        #dd00f3
-    );
-    background-size: 300% 300%;
-
-    -petition-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
+  border: 1px solid black;
 }

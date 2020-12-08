@@ -1,6 +1,6 @@
-<h1 class="header">
+{{!-- <h1 class="header">
     Please, register here:
-</h1>
+</h1> --}}
 
 {{#if err}}
 
@@ -11,20 +11,17 @@
 {{/if}}
 
 <div class="form">
+    Sich registrieren:
     <form method=POST>
         <input type="hidden" name="_csrf" value="{{csrfToken}}">
-        <input name="name" placeholder="Inser your first name"></input>
-        <input name="lastname" placeholder="Insert your last name"></input>
+        <input name="name" placeholder="Vorname"></input>
+        <input name="lastname" placeholder="Nachname"></input>
         <br>
-        <input name="email" placeholder="Insert your e-mail"></input>
-        <input name="password" type="password" placeholder="Insert your password"></input>
+        <input name="email" placeholder="Email Adresse"></input>
+        <input name="password" type="password" placeholder="Dein Passwort"></input>
         <br>
         <center>
-            <button>Submit</button>
+            <button>senden</button>
         </center>
     </form>
 </div>
-
-<h1 class="header">
-    If you are already registered, please
-</h1>
