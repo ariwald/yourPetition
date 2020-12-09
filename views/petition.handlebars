@@ -1,24 +1,26 @@
 {{#if err}}
 <div class="error">
-    You must fill all input fields!
+    Das Feld ist noch leer
 </div>
 {{/if}}
 
 <h1 class="header">
-    {{name}} {{lastname}}, sign our petition and let's ink the world :-)
+    {{name}} {{lastname}}, unterschreibe die Petition :-)
 </h1>
 
-<div class="form">
+<div class="formCanvas">
     <form method=POST>
         <input type="hidden" name="_csrf" value="{{csrfToken}}">
         <div class="button">
             <input name="signature" type="hidden" id="hiddenField"></input>
-            <canvas id="canvas" width="500" height="50"></canvas>
+            <canvas id="canvas" width="400" height="50"></canvas>
             <br>
             <br>
             <center>
-                <button>submit</button>
+                <button>senden</button>
             </center>
         </div>
     </form>
 </div>
+
+{{!-- <script src="script.js"></script> --}}

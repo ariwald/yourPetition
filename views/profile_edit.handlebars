@@ -1,12 +1,12 @@
 <h1 class="header">
-    Edit your profile
+    Profil bearbeiten
 </h1>
 
 {{#if err}}
 
 <h1 class="header">
     <div class="err">
-        Changes successfully submitted!
+        Das hat geklappt!
     </div>
 </h1>
 
@@ -15,23 +15,23 @@
 {{#if changes}}
 
 <div>
-    Changes successfully submitted!
+    Das hat geklappt!
 </div>
 
 {{/if}}
 
-<div class="formEdit">
+<div class="form">
     <form method=POST>
         <input type="hidden" name="_csrf" value="{{csrfToken}}">
         <input type="text" name="name" placeholder="{{profile.name}}" value="{{profile.name}}">
         <input type="text" name="lastname" placeholder="{{profile.lastname}}" value="{{profile.lastname}}">
         <input type="text" name="email" placeholder="{{profile.email}}" value="{{profile.email}}">
-        <input type="password" name="password" placeholder="New password"><br>
+        <input type="password" name="password" placeholder="Neues Passwort"><br>
         <input type="text" name="age" placeholder="{{profile.age}}" value="{{profile.age}}">
         <input type="text" name="city" placeholder="{{profile.city}}" value="{{profile.city}}">
         <input type="text" name="url" id="homepage" placeholder="{{profile.url}}" value="{{profile.url}}">
         <center>
-            <button name="button">Update</button>
+            <button name="button">senden</button>
         </center>
     </form>
 </div>

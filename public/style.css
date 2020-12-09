@@ -58,6 +58,8 @@ button {
   background: black;
   color: white;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+
   font-size: 20px;
 }
 
@@ -87,9 +89,23 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 4rem;
+  width: 20rem;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 3rem;
+  color: black;
+  background: white;
+}
+
+.formMehrInfo {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }
 
 .headerThanks {
@@ -98,10 +114,11 @@ input {
   justify-content: center;
   align-items: center;
   height: 100px;
+  width: 20rem;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: #2b1de8;
+  background: white;
 }
 
 .headerLogin {
@@ -110,15 +127,6 @@ input {
   align-items: center;
   height: 100px;
   font-size: 30px;
-}
-
-.formEdit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background: #2b1de8;
-  border: solid 1px;
 }
 
 .error {
@@ -132,5 +140,7 @@ input {
 }
 
 #canvas {
-  border: 1px solid black;
+  border: 1px solid white;
+  background: white;
+  color: black;
 }
