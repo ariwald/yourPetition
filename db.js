@@ -22,6 +22,7 @@ module.exports.userRegister = (name, lastname, email, password) => {
     [name, lastname, email, password]
   );
 };
+
 //used for post login
 module.exports.getUsersEmail = function(email) {
   return db
