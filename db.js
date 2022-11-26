@@ -1,7 +1,7 @@
 const spicedPg = require("spiced-pg");
 const db = spicedPg(
   process.env.DATABASE_URL ||
-    "postgres://lovmnlgkwjizga:ec9f6a7af6c33a7380a8eec1a827050eac458ea1518a1694060897441c2dac45@ec2-63-32-22-122.eu-west-1.compute.amazonaws.com:5432/don7ssdtcj2fr"
+    "postgres:postgres:postgres@localhost:5432/petition"
 );
 
 module.exports.getSignatures = function() {
