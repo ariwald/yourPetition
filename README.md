@@ -1,7 +1,5 @@
 Hire me! This project marked the time where I was introduced to a more complex data flow and the dynamics of working with Node and SQL extensively.
 
-https://arivaldo.herokuapp.com/
-
 BACKEND:
 In the back a Node.js Express Server and a PostgreSQL database take care of things like storing user information and authentication. The platform is protected from potential SQL injections and CSURF attacks. When a user signs, rather than storing an image, the raw data string is stored. This helps reduce file size and later, when displaying the signature again, it makes sure there are no pixelated signatures. Express-Handlebars is used to render different HTML templates.
 
@@ -19,5 +17,3 @@ The user can also edit the profile, delete or change the signature.
 
 FRONTEND
 Using Handlebars, information from the server is being displayed.
-# petition
-# yourPetition
